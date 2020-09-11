@@ -1,0 +1,15 @@
+header {
+    background-color: $mainColor;
+    height: $altezzaHeader;
+};
+.header-top{
+    height: $altezzaHeader/2;
+    @include my-display-flex-end;
+    font-size: $fontSizeSmall;
+    & .icon {
+        color: $iconColor;
+    }
+    & .icon-text {
+        color: $textColorMedium;
+    }
+}

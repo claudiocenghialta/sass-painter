@@ -1,0 +1,6 @@
+@mixin my-display-flex-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+};
