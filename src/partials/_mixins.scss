@@ -1,6 +1,6 @@
-@mixin my-display-flex-end {
+@mixin my-display-flex ($direction,$justify,$align){
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    flex-direction: $direction;
+    justify-content:  $justify;
+    align-items: $align;
 };

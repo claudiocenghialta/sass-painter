@@ -1,0 +1,50 @@
+li.dropdown-parent {
+    position: relative;
+
+    .dropdown {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 2;
+        width: 260px;
+        background-color: $textColorMedium;
+        display: none;
+
+        ul {
+            @include my-display-flex(column,space-between,stretch);
+
+            li.dropdown-link {
+                @include my-display-flex(row,space-between,center);
+                margin-right: 0;
+                height: 50px;
+                padding: 10px;
+                cursor: pointer;
+
+                a {
+                    color: $textColorDark;
+                };
+
+                i {
+                    color: grey;
+                    line-height: 50px;
+                    padding: 0 5px;
+                };
+
+                &:hover {
+                    background-color: $textColorDark;
+
+                    & a,i {
+                        color: $textColorLight;
+                    }
+                };
+            }
+        }
+    }
+
+    &:focus,
+    &:hover {
+        .dropdown {
+            display: block;
+        }
+    }
+}

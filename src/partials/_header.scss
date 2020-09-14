@@ -2,14 +2,43 @@ header {
     background-color: $mainColor;
     height: $altezzaHeader;
 };
-.header-top{
-    height: $altezzaHeader/2;
-    @include my-display-flex-end;
+
+.header-top {
+    height: $altezzaHeaderTop;
+    @include my-display-flex (row,flex-end,center);
     font-size: $fontSizeSmall;
+
     & .icon {
         color: $iconColor;
     }
+
     & .icon-text {
         color: $textColorMedium;
+    }
+
+    & .select-lang {}
+}
+
+.header-bottom {
+    height: $altezzaHeaderBottom;
+    @include my-display-flex (row,space-around,center);
+
+    & .header-nav {
+        @include my-display-flex (row,space-around,center);
+
+        & li {
+            position: relative;
+            padding: 20px;
+            margin-right: 30px;
+        }
+
+        & a {
+            color: $textColorLight;
+        }
+        & i.down {
+            padding-left: 5px;
+            transform: translateY(5px);
+        }
+
     }
 }
