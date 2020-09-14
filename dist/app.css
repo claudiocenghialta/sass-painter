@@ -185,3 +185,47 @@ header {
   transform: translateY(5px);
 }
 
+section.jumbotron {
+  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.jumbotron .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: stretch;
+  color: white;
+}
+
+section.jumbotron .container .author {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+section.jumbotron .container .description {
+  flex: 0 0 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+section.jumbotron .container .description ul li {
+  padding-top: 10px;
+}
+
+section.jumbotron .container .buy-now {
+  flex: 0 0 30%;
+  margin-top: 20px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 5px;
+}
+

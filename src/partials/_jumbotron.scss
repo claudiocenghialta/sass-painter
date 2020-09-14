@@ -1,0 +1,33 @@
+section.jumbotron {
+    background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        @include my-display-flex(row,space-around,stretch);
+        color: $textColorLight;
+        .author {
+            flex: 0 0 35%;
+            @include my-display-flex(column-reverse,space-between,center);
+            padding-bottom: 20px;
+        }
+        .description {
+            flex: 0 0 35%;
+            @include my-display-flex(column,space-around,stretch);
+            ul{
+                li{
+                    padding-top: 10px;
+                }
+            }
+        }
+        .buy-now {
+            flex: 0 0 30%;
+            margin-top: 20px;
+            height: 300px;
+            background: rgba(0,0,0,0.8) ;
+            padding: 10px 5px;
+        }
+    }
+
+}
